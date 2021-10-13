@@ -220,3 +220,74 @@ ul.topnav li.icon {
     top: 60px;
 }
 
+/*
+
+------------------------------------- BACKGROUND
+
+*/
+
+#about {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../img/background-title.jpg) no-repeat center top;
+    background-color: #694fca;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+}
+
+#about-content{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 12%;
+    padding-bottom: 20px;
+}
+
+#about-text{
+    color: #dddddd;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+#mouse{
+    max-width: 431px;
+    width: 25%;
+    float: right;
+}
+
+#mouse img{
+    width: 300px;
+    max-width: 431px;
+    width: 100%;
+}
+
+/*
+
+------------------------------------- CODING
+
+*/
+
+#coding {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../img/background-title.jpg) no-repeat center top;
+    background-color: #694fca;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+}
+
+#coding-content{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 12%;
+    padding-bottom: 20px;
+}
+
