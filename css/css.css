@@ -1,3 +1,19 @@
+/*
+---------------------------------------------------------------- COLORS
+*/
+
+:root{
+    --violet:#694fca;
+    --violet-dark:#614bb3;
+    --violet-darker:#5d48ac;
+    --orange:#ffa800;
+    --grey:#b0b0b0;
+}
+
+/*
+---------------------------------------------------------------- TAGS
+*/
+
 html,
 body {
     height: 100%;
@@ -7,9 +23,6 @@ body {
 
 html {
     background: url(../img/main.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -21,135 +34,90 @@ body{
     height: 100vh;
 }
 
+section{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--orange);
+    padding-top: 70px;
+    margin: 0 auto;    
+}
+
+/*
+------------------------------------- COMMOM
+*/
+
 .title{
     font-family: 'Josefin Slab', serif;
     font-weight: 300;
     text-align: center;
-    font-size: 3rem;
-}
-
-.subtitle{
-    font-family: 'Josefin Slab', serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 1rem;
-    position: relative;
-}
-
-.text{
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.orange{
-    color: #ffa800;
-}
-
-.violet{
-    color: #694fca;
-}
-
-.grey{
-    color:#b0b0b0;
-}
-
-.light{
-    font-weight: 200;
-}
-
-.left{
-    position:absolute;
-    width: 33%;
-    left: 0;
-    text-align: left;
-}
-
-.center{
-    position:absolute;
-    width: 34%;
-    margin-left:33%;
-}
-
-.right{
-    position: absolute;
-    width: 33%;
-    right: 0;
-    text-align: right;
-}
-
-.bold{
-    font-weight: 700;
-}
-
-.white{
-    color: #ffffff;
-}
-
-.secondary-title{
-    font-family: 'Josefin Slab', serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 24px;
-    position: relative;
-    top: 23vh;
-}
-
-.section-title{
-    font-family: 'Josefin Slab', serif;
-    font-weight: 300;
-    text-align: center;
     font-size: 56px;
-}
-
-.centered{
-    text-align: center;
-}
-
-.title-container{
-    text-align: center;
-    margin-top: -20px;
+    color: var(--orange);
 }
 
 .switcher{
     display: inline-block;
 }
 
+.content{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
 /*
-
 ------------------------------------- NAVIGATION
-
 */
 
 nav{
-    background-color: rgba(255,255,255);
+    background-color: white;
     width: 100%;
     position: fixed;
     z-index: 10000;
-}
-
-#menu{
-    margin: 0 auto;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul.topnav {
-    list-style-type: none;
+#menu-container{
     margin: 0 auto;
+    text-align: center;
+}
+
+#menu-container > ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-ul.topnav li {
+#menu-container > ul > li {
     float: left;
 }
 
-ul.topnav li a {
+#menu-container > ul > li > a {
     display: inline-block;
-    color: #858585;
+    color: #7c7c7c;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     letter-spacing: 3px;
@@ -158,29 +126,23 @@ ul.topnav li a {
     transition: 0.3s;
 }
 
-ul.topnav li a:hover {
+#menu-container > ul > li > a:hover {
     background-color: #555;
     color: white;
 }
 
-ul.topnav li.icon {
+#menu-container > ul > li.icon {
     display: none;
 }
 
 /*
-
 ------------------------------------- MAIN
-
 */
 
-#main {
-    position: relative;
+#main{
     top: 0;
     left: 0;
-    width: 100%;
     height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 #logo{
@@ -204,90 +166,130 @@ ul.topnav li.icon {
     margin-top: 30vh;
 }
 
-#main-subtitle{
-    position: relative;
-    top: 20px;
-}
-
 #lower-text{
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     letter-spacing: 5px;
     color: #ffffff;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     position: relative;
     top: 60px;
 }
 
 /*
-
-------------------------------------- BACKGROUND
-
+------------------------------------- ABOUT
 */
 
-#about {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: url(../img/background-title.jpg) no-repeat center top;
-    background-color: #694fca;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size:contain;
-}
-
-#about-content{
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 12%;
-    padding-bottom: 20px;
-}
-
-#about-text{
-    color: #dddddd;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 300;
-    margin: 0 auto;
+#about{
+    background-color: var(--violet);
 }
 
 #mouse{
-    max-width: 431px;
-    width: 25%;
     float: right;
 }
 
-#mouse img{
-    width: 300px;
-    max-width: 431px;
-    width: 100%;
+/*
+------------------------------------- CODING
+*/
+
+#coding{
+    background-color: var(--grey);
+}
+
+#coding > h1{
+    color: var(--violet);
+}
+
+#coding img{
+    margin: 0 auto;
+    width: 80%;
+    display: block;
 }
 
 /*
-
-------------------------------------- CODING
-
+------------------------------------- MEDIA QUERIES
 */
 
-#coding {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: url(../img/background-title.jpg) no-repeat center top;
-    background-color: #694fca;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size:contain;
-}
+/*
+When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home").
+Show the list item that contains the link to open and close the topnav (li.icon).
+The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+This class makes the topnav look good on small screens
+*/
 
-#coding-content{
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 12%;
-    padding-bottom: 20px;
-}
+@media screen and (max-width:680px) {
 
+    /*
+    ------------------------------------------------------ MENU
+    */
+
+    #menu-container{
+        width:100%;
+    }
+
+    #menu-container > ul > li:not(:first-child) {
+        display: none;
+    }
+
+    #menu-container > ul > li.icon {
+        float: right;
+        display: block;
+    }
+
+    #menu-container > ul.responsive {
+        position: relative;
+    }
+
+    #menu-container > ul.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    #menu-container > ul.responsive li {
+        float: none;
+        display: inline;
+    }
+    
+    #menu-container > ul.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    #lower-text{
+        font-size: 18px;
+        top: 50px;
+    }
+    
+    /*
+    ------------------------------------------------------ TAGS
+    */
+
+    h1{
+        font-size: 2rem;
+        padding-top: 70px;
+    }
+
+    /*
+    ------------------------------------------------------ COMMOM
+    */
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .content{
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    /*
+    ------------------------------------------------------ CODING
+    */
+
+    #coding img{
+        width: 100%;
+    }
+}
+  
