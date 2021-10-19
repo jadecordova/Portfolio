@@ -18,8 +18,7 @@
 </head>
 
 <body>
-    
-    
+
     <section id="main">
         <nav>
             <div id="menu-container">
@@ -49,7 +48,7 @@
     
     <section id="about">
         <h1>THE WHO</h1>
-        <div class="content white">
+        <div class="content black">
             <div id="mouse">
                 <img srcset="img/mouse150.png 150w,
                             img/mouse300.png 300w"
@@ -72,6 +71,12 @@
     </section>
 
     <section id="coding">
+        <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path fill="#918E9B" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path0 5s linear infinite alternate;" />
+            <path fill="#614BB3" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path1 12.5s linear infinite alternate;" />
+            <path fill="#5D48AC" fill-opacity="0.2" d="M-100 -100L200 -100L200 80L-100 80Z" style="animation: path2 30s linear infinite alternate;" />
+          </svg>
+    
         <h1>BITS OF ME</h1>
         <div class="content black">
             <article class="code-example">
@@ -79,14 +84,12 @@
                 <p>Developed in C#, <strong>SyncLoop</strong> is an application I created to help with the synchronization of video loops for dubbing and subtitling.</p>
                 <p>The app allows the user to mark the in and out points of each character intervention, and generates a final file according to the format specified by the client.</p>
                 <p>It also lets the user input program info, create, edit and delete characters, find and replace text, offset loops, check for correct loop order, determine the total of lines for each characters (as needed to calculate the actors' pay), keep track of current rates and calculate the period earning for the translators.</p>
-                <img    srcset="img/syncloop400.png 400w,
-                            img/syncloop600.png 600w,
-                            img/syncloop900.png 900w"
-                        sizes="(max-width: 680px) 400px,
-                                (max-width: 900px) 600px,
-                                900px"
-                        src="img/syncloop900.png"
+                <img    srcset="img/syncloop1-400.jpg 400w,
+                            img/syncloop1-600.jpg 600w"
+                        sizes="(max-width: 680px) 400px, 600px"
+                        src="img/syncloop1-600.jpg"
                         alt="SyncLoop Application">
+                <a href="https://github.com/jadecordova/SyncLoop" target="_blank"><p>Code available at</p><img src="img/github.svg" class="svg"></a>
             </article>
             <hr/>
             <article class="code-example">

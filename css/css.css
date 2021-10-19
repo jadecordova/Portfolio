@@ -1,21 +1,39 @@
 /*
+---------------------------------------------------------------- FONTS
+*/
+
+@font-face {
+    font-family: Bold;
+    src: url(../fonts/OpenSansCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: Normal;
+    src: url(../fonts/OpenSansCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: Italic;
+    src: url(../fonts/OpenSansCondensed-LightItalic.ttf);
+}
+
+/*
 ---------------------------------------------------------------- COLORS
 */
 
-:root{
-    --violet:#694fca;
-    --violet-dark:#614bb3;
-    --violet-darker:#5d48ac;
-    --orange:#ffa800;
-    --grey:#b0b0b0;
+:root {
+    --violet: #694fca;
+    --violet-dark: #614bb3;
+    --violet-darker: #5d48ac;
+    --orange: #ffa800;
+    --grey: #b0b0b0;
 }
 
 /*
 ---------------------------------------------------------------- TAGS
 */
 
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -26,7 +44,7 @@ html {
     background-size: cover;
 }
 
-body{
+body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: 1.5em;
@@ -34,29 +52,46 @@ body{
     height: 100vh;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
-h1{
+h1 {
     font-family: 'Josefin Slab', serif;
     font-weight: 300;
     text-align: center;
     font-size: 4rem;
-    color: var(--orange);
     padding-top: 70px;
-    margin: 0 auto;    
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.75;
+}
+
+a>p {
+    text-align: center;
+}
+
+a {
+    width: fit-content;
+    text-decoration: none;
+    font-family: Bold;
+    color: white;
+}
+
+a:visited {
+    color: var(--violet);
 }
 
 /*
 ------------------------------------- COMMOM
 */
 
-.title{
+.title {
     font-family: 'Josefin Slab', serif;
     font-weight: 300;
     text-align: center;
@@ -64,30 +99,36 @@ h1{
     color: var(--orange);
 }
 
-.switcher{
+.switcher {
     display: inline-block;
 }
 
-.content{
+.content {
     width: 50%;
-    margin: 0 auto;
+    margin: 150px auto 0 auto;
     padding-top: 0;
     padding-bottom: 20px;
 }
 
-.white{
+.white {
     color: white;
 }
 
-.black{
+.black {
     color: black;
+}
+
+.svg {
+    width: 15%;
+    position: relative;
+    top: -20px;
 }
 
 /*
 ------------------------------------- NAVIGATION
 */
 
-nav{
+nav {
     background-color: white;
     width: 100%;
     position: fixed;
@@ -97,23 +138,23 @@ nav{
     align-items: center;
 }
 
-#menu-container{
+#menu-container {
     margin: 0 auto;
     text-align: center;
 }
 
-#menu-container > ul {
+#menu-container>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-#menu-container > ul > li {
+#menu-container>ul>li {
     float: left;
 }
 
-#menu-container > ul > li > a {
+#menu-container>ul>li>a {
     display: inline-block;
     color: #7c7c7c;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -126,12 +167,12 @@ nav{
     transition: 0.3s;
 }
 
-#menu-container > ul > li > a:hover {
+#menu-container>ul>li>a:hover {
     background-color: #555;
     color: white;
 }
 
-#menu-container > ul > li.icon {
+#menu-container>ul>li.icon {
     display: none;
 }
 
@@ -139,13 +180,13 @@ nav{
 ------------------------------------- MAIN
 */
 
-#main{
+#main {
     top: 0;
     left: 0;
     height: 100vh;
 }
 
-#logo{
+#logo {
     position: relative;
     margin: 0 auto;
     width: 30%;
@@ -154,7 +195,7 @@ nav{
     text-align: center;
 }
 
-#logo img{
+#logo img {
     position: relative;
     width: 30%;
     min-width: 120px;
@@ -162,11 +203,11 @@ nav{
     display: inline-block;
 }
 
-#main-title{
+#main-title {
     margin-top: 30vh;
 }
 
-#lower-text{
+#lower-text {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     letter-spacing: 5px;
@@ -181,11 +222,20 @@ nav{
 ------------------------------------- ABOUT
 */
 
-#about{
-    background-color: var(--violet);
+#about {
+    background: url(../img/portfolio-900.png);
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+   
 }
 
-#mouse{
+#about>h1{
+    position: relative;
+    top: 80px;
+}
+#mouse {
     float: right;
 }
 
@@ -193,18 +243,63 @@ nav{
 ------------------------------------- CODING
 */
 
-#coding{
-    background-color: var(--grey);
+#coding {
+    /*background-color: var(--grey);*/
+    overflow-x: hidden;
 }
 
-#coding > h1{
+#coding>h1 {
     color: var(--violet);
 }
 
-#coding img{
+#coding img {
     margin: 0 auto;
-    width: 80%;
     display: block;
+}
+
+/*
+------------------------------------------------------ BACKGROUND 1
+*/
+
+path {
+    transform-origin: 50% 0%;
+}
+
+.background--custom {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+@keyframes path0 {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes path1 {
+    0% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes path2 {
+    0% {
+        transform: rotate(40deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+    }
 }
 
 /*
@@ -219,77 +314,60 @@ This class makes the topnav look good on small screens
 */
 
 @media screen and (max-width:680px) {
-
     /*
     ------------------------------------------------------ MENU
     */
-
-    #menu-container{
-        width:100%;
+    #menu-container {
+        width: 100%;
     }
-
-    #menu-container > ul > li:not(:first-child) {
+    #menu-container>ul>li:not(:first-child) {
         display: none;
     }
-
-    #menu-container > ul > li.icon {
+    #menu-container>ul>li.icon {
         float: right;
         display: block;
     }
-
-    #menu-container > ul.responsive {
+    #menu-container>ul.responsive {
         position: relative;
     }
-
-    #menu-container > ul.responsive li.icon {
+    #menu-container>ul.responsive li.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-    
-    #menu-container > ul.responsive li {
+    #menu-container>ul.responsive li {
         float: none;
         display: inline;
     }
-    
-    #menu-container > ul.responsive li a {
+    #menu-container>ul.responsive li a {
         display: block;
         text-align: left;
     }
-
-    #lower-text{
+    #lower-text {
         font-size: 18px;
         top: 50px;
     }
-    
     /*
     ------------------------------------------------------ TAGS
     */
-
-    h1{
+    h1 {
         font-size: 2rem;
         padding-top: 70px;
     }
-
     /*
     ------------------------------------------------------ COMMOM
     */
-
-    .title{
+    .title {
         font-size: 2rem;
     }
-
-    .content{
+    .content {
         width: 80%;
         font-size: 1.2rem;
     }
-
     /*
     ------------------------------------------------------ CODING
     */
-
-    #coding img{
+    #coding img {
         width: 100%;
     }
 }
-  
