@@ -1,113 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Jose De Cordova</title>
-
-    <!-------------------------------------------------- FONTS -->
-    
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
-    
     <!-------------------------------------------------- CSS -->
     <link rel="stylesheet" type="text/css" href="css/css.css">
-
+    <link rel="stylesheet" type="text/css" href="css/material-photo-gallery.css">
 </head>
 
 <body>
 
+    <!----------------------------------------------------------------------------------------------------------------- NAVIGATION -->
+    <nav>
+        <div id="menu">
+            <ul class="topnav" id="myTopnav">
+                <li><a class="menu-item" href="#about">about me</a></li>
+                <li><a class="menu-item" href="#coding">coding</a></li>
+                <li><a class="menu-item" href="#design">design</a></li>
+                <li><a class="menu-item" href="#retouch">retouch</a></li>
+                <li><a class="menu-item" href="#contact">contact</a></li>
+                <li class="icon"><a id="icon">&#9776;</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!----------------------------------------------------------------------------------------------------------------- MAIN -->
     <section id="main">
-        <nav>
-            <div id="menu-container">
-                <ul id="menu">
-                    <li><a class="menu-item" href="#about">about me</a></li>
-                    <li><a class="menu-item" href="#coding">coding</a></li>
-                    <li><a class="menu-item" href="#design">design</a></li>
-                    <li><a class="menu-item" href="#retouch">retouch</a></li>
-                    <li><a class="menu-item" href="#contact">contact</a></li>
-                    <li class="icon"><a id="icon">&#9776;</a></li>
-                </ul>
-            </div>
-        </nav>
-    
+
         <div id="logo">
             <img src="img/logo.png" />
         </div>
-        <div id="main-title" class="title orange">
+        <div id="main-title" class="title">
             BOTH HEMISPHERES WORKING.
         </div>
-        <div id="lower-text">
+        <div class="subtitle">
             <div class="switcher">I design and program things.</div>
             <div class="switcher">Like the web.</div>
         </div>
+
     </section>
-    
-    
+
+
+    <!----------------------------------------------------------------------------------------------------------------- ABOUT -->
     <section id="about">
         <h1>THE WHO</h1>
-        <div class="content black">
+        <div class="content">
             <div id="mouse">
-                <img srcset="img/mouse150.png 150w,
-                            img/mouse300.png 300w"
-                sizes="(max-width: 680px) 150px,
-                        300px"
-                src="img/mouse300.png"
-                alt="Mouse">
+                <img srcset="img/mouse150.png 150w, img/mouse300.png 300w" sizes="(max-width: 680px) 150px, 300px"
+                    src="img/mouse300.png" alt="Mouse">
             </div>
-                <p>I'm a self-taught web developer and graphic designer, with a degree in audiovisual communications.</p>
+            <p>I'm a self-taught web developer and graphic designer, with a degree in audiovisual communications.</p>
             <p>I have experience in front-end and back-end development. Fluent in HTML5, CSS3, ES6, PHP, MySQL.
                 I also have some experience in Node and Electron, and I'm currently learning React.</p>
-            <p>I've worked on web development almost since the Internet first appeared; back when there was no CSS and JavaScript was just a way to do fancy tricks on a site (Remember the &lt;blink&gt; tag?).
-                By then, the way to really add interactivity and animation to a website was using Flash, so I worked with Flash/ActionScript for a long time.</p>
+            <p>I've worked on web development almost since the Internet first appeared; back when there was no CSS and
+                JavaScript was just a way to do fancy tricks on a site (Remember the &lt;blink&gt; tag?).
+                By then, the way to really add interactivity and animation to a website was using Flash, so I worked
+                with Flash/ActionScript for a long time.</p>
             <p>
-                From BASIC (yes, I know), to Pascal, C, ActionScript, C#, PHP, SQL to JavaScript, coding became a passion. I love the possibility of beating the machine, of solving problems.
-                That road led me to participate in projects for Etheron (the first Venezuela's ISP), Kellogg's, Mitsubishi, Jones Knowles Ritchie, PageUp; and develop interactive pieces for the likes of world-renowned plastic artists Carlos Cruz-Diez and Rolando Pe&ntilde;a.
+                From BASIC (yes, I know), to Pascal, C, ActionScript, C#, PHP, SQL to JavaScript, coding became a
+                passion. I love the possibility of beating the machine, of solving problems.
+                That road led me to participate in projects for Etheron (the first Venezuela's ISP), Kellogg's,
+                Mitsubishi, Jones Knowles Ritchie, PageUp; and develop interactive pieces for the likes of
+                world-renowned plastic artists Carlos Cruz-Diez and Rolando Pe&ntilde;a.
             </p>
-            <p>That contact with the art and design world taught me a lot, so I've mastered tools like Photoshop, InDesign, Illustrator, Blender and many others; and had the opportunity to teach in several academies and institutes.</p>
+            <p>That contact with the art and design world taught me a lot, so I've mastered tools like Photoshop,
+                InDesign, Illustrator, Blender and many others; and had the opportunity to teach in several academies
+                and institutes.</p>
+
+            <fieldset id="certificates">
+                <legend>Certificates</legend>
+                <div class="certificate">
+                    <div class="certificate-image">
+                        <img src="img/CSS.svg" class="logo">
+                    </div>
+                    <div class="certificate-text">
+                        <a href="https://www.sololearn.com/Certificate/1023-23262174/jpg" target="_blank">CSS</a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="certificate-image">
+                        <img src="img/javascript.svg" class="logo">
+                    </div>
+                    <div class="certificate-text">
+                        <a href="https://www.sololearn.com/certificates/course/en/23262174/1024/landscape/png"
+                            target="_blank">JavaScript</a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="certificate-image">
+                        <img src="img/javascript.svg" class="logo">
+                    </div>
+                    <div class="certificate-text">
+                        <a href="https://www.udemy.com/certificate/UC-ee94b20d-58a2-4f45-89d1-f594ae0ee5d8/"
+                            target="_blank">JavaScript<span>Basics to Advanced - 2021</span></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="certificate-image">
+                        <img src="img/javascript.svg" class="logo">
+                    </div>
+                    <div class="certificate-text">
+                        <a href="https://www.udemy.com/certificate/UC-cc46830e-dd7d-4879-b729-7bc719c94780/"
+                            target="_blank">JavaScript<span>Ultimate Course</span></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="certificate-image">
+                        <img src="img/front-end.svg" class="logo">
+                    </div>
+                    <div class="certificate-text">
+                        <a href="https://www.udemy.com/certificate/UC-1be9ad88-2dce-484a-94b2-851e6dcd33ae/"
+                            target="_blank">Front End<span>Development Ultimate <span class="switcher">Course -
+                                    2021</span></span></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="certificate-image">
+                        <img src="img/front-end.svg" class="logo">
+                    </div>
+                    <div class="certificate-text">
+                        <a href="https://www.udemy.com/certificate/UC-69664f4d-dce8-4acc-be76-bcde3ea63622/"
+                            target="_blank">Practical<span>Web Design & Development</span></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="certificate-image">
+                        <img src="img/front-end.svg" class="logo">
+                    </div>
+                    <div class="certificate-text">
+                        <a href="https://www.sololearn.com/Certificate/1162-23262174/jpg"
+                            target="_blank">Responsive<span>Web Design</span></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="certificate-image">
+                        <img src="img/react.svg" class="logo">
+                    </div>
+                    <div class="certificate-text">
+                        <a href="https://www.udemy.com/certificate/UC-a7642c5b-f741-4339-8ebd-b033078e9b4e/"
+                            target="_blank">ReactJS<span>Complete Course - Basics to Advanced - 2021</span></a>
+                    </div>
+                </div>
+
+            </fieldset>
         </div>
     </section>
 
+
+    <!----------------------------------------------------------------------------------------------------------------- CODING -->
     <section id="coding">
         <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path fill="#918E9B" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path0 5s linear infinite alternate;" />
-            <path fill="#614BB3" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path1 12.5s linear infinite alternate;" />
-            <path fill="#5D48AC" fill-opacity="0.2" d="M-100 -100L200 -100L200 80L-100 80Z" style="animation: path2 30s linear infinite alternate;" />
-          </svg>
-    
-        <h1>BITS OF ME</h1>
-        <div class="content black">
+            <path fill="#FAFAFA" fill-opacity="1" d="M-100 -100L200 -100L200 80L-100 80Z"
+                style="animation: path0 41.666666666666664s linear infinite alternate;" />
+            <path fill="#EEEEEE" fill-opacity="1" d="M-100 -100L200 -100L200 70L-100 70Z"
+                style="animation: path1 100s linear infinite alternate;" />
+            <path fill="#EAEAEA" fill-opacity="1" d="M-100 -100L200 -100L200 20L-100 20Z"
+                style="animation: path2 20s linear infinite alternate;" />
+        </svg>
+        <h1><span>BITS OF ME</span></h1>
+        <div class="content">
             <article class="code-example">
                 <h2>SyncLoop</h2>
-                <p>Developed in C#, <strong>SyncLoop</strong> is an application I created to help with the synchronization of video loops for dubbing and subtitling.</p>
-                <p>The app allows the user to mark the in and out points of each character intervention, and generates a final file according to the format specified by the client.</p>
-                <p>It also lets the user input program info, create, edit and delete characters, find and replace text, offset loops, check for correct loop order, determine the total of lines for each characters (as needed to calculate the actors' pay), keep track of current rates and calculate the period earning for the translators.</p>
-                <img    srcset="img/syncloop1-400.jpg 400w,
-                            img/syncloop1-600.jpg 600w"
-                        sizes="(max-width: 680px) 400px, 600px"
-                        src="img/syncloop1-600.jpg"
+                <p>Developed in C#, <strong>SyncLoop</strong> is an application I created to help with the
+                    synchronization of video loops for dubbing and subtitling.</p>
+                <p>The app allows the user to mark the in and out points of each character intervention, and generates a
+                    final file according to the format specified by the client.</p>
+                <p>It also lets the user input program info, create, edit and delete characters, find and replace text,
+                    offset loops, check for correct loop order, determine the total lines for each characters (as needed
+                    to calculate the actors' pay), keep track of current rates and calculate the period earning for the
+                    translators.</p>
+                <div class="code-image">
+                    <img class="splash"
+                        srcset="img/syncloop1-400.jpg 400w, img/syncloop1-600.jpg 600w, img/syncloop1-800.jpg"
+                        sizes="(max-width: 680px) 400px, (max-width: 1500px) 600px, 800px" src="img/syncloop1-800.jpg"
                         alt="SyncLoop Application">
-                <a href="https://github.com/jadecordova/SyncLoop" target="_blank"><p>Code available at</p><img src="img/github.svg" class="svg"></a>
+                    <div class="github">
+                        <a href="https://github.com/jadecordova/SyncLoop" target="_blank"><span>Code available
+                                at</span><img src="img/github.svg" class="github-logo"></a>
+                    </div>
+                </div>
             </article>
-            <hr/>
             <article class="code-example">
                 <h2>VideoCat</h2>
-                <p>Developed in Electron (JavaScript, Node), <strong>VideoCat</strong> is a video cataloger that allows the user classify and tag videos. It uses VirtualDub, a free video editor, to automaticcaly generate thumbnails from de videos. It also allows for searchs based on video cast, tags and scores.</p>
-                <img    srcset="img/syncloop400.png 400w,
-                            img/syncloop600.png 600w,
-                            img/syncloop900.png 900w"
-                        sizes="(max-width: 680px) 400px,
-                                (max-width: 900px) 600px,
-                                900px"
-                        src="img/syncloop900.png"
-                        alt="SyncLoop Application">
+                <p>Developed in Electron (JavaScript, Node), <strong>VideoCat</strong> is a video cataloger that allows
+                    the user to classify and tag videos. It uses VirtualDub, a free video editor, to automaticcaly
+                    generate thumbnails from de videos. It also allows for searchs based on video cast, tags and scores.
+                </p>
+                <div class="code-image">
+                    <img class="splash"
+                        srcset="img/videocat-400.png 400w, img/videocat-600.png 600w, img/videocat-800.png"
+                        sizes="(max-width: 680px) 400px, (max-width: 1500px) 600px, 800px" src="img/videocat-800.png"
+                        alt="VideoCat Application">
+                    <div class="github">
+                        <a href="https://github.com/jadecordova/VideoCat" target="_blank"><span>Code available
+                                at</span><img src="img/github.svg" class="github-logo"></a>
+                    </div>
+                </div>
+            </article>
+            <article class="code-example">
+                <h2>Tyrants</h2>
+                <p>Idea for a RPG in JavaScript, based on Phaser lib. Just the first stage as a proof of concept.</p>
+                <div class="code-image">
+                    <img class="splash" srcset="img/tyrants-400.jpg 400w, img/tyrants-600.jpg 600w, img/tyrants-800.jpg"
+                        sizes="(max-width: 680px) 400px, (max-width: 1500px) 600px, 800px" src="img/tyrants-800.jpg"
+                        alt="Tyrants">
+                    <div class="github">
+                        <a href="https://github.com/jadecordova/Tyrants" target="_blank"><span>Code available
+                                at</span><img src="img/github.svg" class="github-logo"></a>
+                    </div>
+                </div>
             </article>
 
+            <article class="code-example">
+                <h2>Carlos Cruz-Diez</h2>
+                <h3>Interactive Random Chromatic Experience</h3>
+                <p>ActionScript programming of world-renowned plastic artist Carlos Cruz-Diez's interactive piece.</p>
+                <div class="code-image">
+                    <img class="splash"
+                        srcset="img/cruz-diez-400.jpg 400w, img/cruz-diez-600.jpg 600w, img/cruz-diez-800.jpg"
+                        sizes="(max-width: 680px) 400px, (max-width: 1500px) 600px, 800px" src="img/cruz-diez-800.jpg"
+                        alt="Carlos Cruz-Diez">
+                </div>
+                <a class="centered" href="cruz-diez.zip" target="_blank">The code is proprietary, but you cand download
+                    the PC app.</a>
+            </article>
         </div>
     </section>
 
+
+    <!----------------------------------------------------------------------------------------------------------------- DESIGN -->
+    <section id="design">
+        <h1>SOME THINGS I DO</h1>
+        <div class="content black m-p-g">
+            <div id="thumbs" class="m-p-g__thumbs" data-google-image-layout data-max-height="128">
+                <img src="img/design/thumbs/cd5.jpg" data-full="img/design/cd5.jpg" class="m-p-g__thumbs-img"
+                    alt="Guinness" />
+                <img src="img/design/thumbs/cd2.jpg" data-full="img/design/cd2.jpg" class="m-p-g__thumbs-img"
+                    alt="Mars" />
+                <img src="img/design/thumbs/cd4.jpg" data-full="img/design/cd4.jpg" class="m-p-g__thumbs-img"
+                    alt="Heinz" />
+                <img src="img/design/thumbs/cd3.jpg" data-full="img/design/cd3.jpg" class="m-p-g__thumbs-img"
+                    alt="Jones Knowles Ritchie" />
+                <img src="img/design/thumbs/bacardi.jpg" data-full="img/design/bacardi.jpg" class="m-p-g__thumbs-img"
+                    alt="Bacardi" />
+                <img src="img/design/thumbs/strings.jpg" data-full="img/design/strings.jpg" class="m-p-g__thumbs-img"
+                    alt="Strings of Bliss Logo" />
+                <img src="img/design/thumbs/chroma1.jpg" data-full="img/design/chroma1.jpg" class="m-p-g__thumbs-img"
+                    alt="Chroma Photography" />
+                <img src="img/design/thumbs/chroma2.jpg" data-full="img/design/chroma2.jpg" class="m-p-g__thumbs-img"
+                    alt="Chroma Photography" />
+                <img src="img/design/thumbs/family1.jpg" data-full="img/design/family1.jpg" class="m-p-g__thumbs-img"
+                    alt="Family Adult Care" />
+                <img src="img/design/thumbs/juliana1.jpg" data-full="img/design/juliana1.jpg" class="m-p-g__thumbs-img"
+                    alt="Juliana Lamardo" />
+                <img src="img/design/thumbs/natur1.jpg" data-full="img/design/natur1.jpg" class="m-p-g__thumbs-img"
+                    alt="Natur" />
+                <img src="img/design/thumbs/balhauer1.jpg" data-full="img/design/balhauer1.jpg"
+                    class="m-p-g__thumbs-img" alt="Balhauer's Kids Orchestra" />
+                <img src="img/design/thumbs/balhauer2.jpg" data-full="img/design/balhauer2.jpg"
+                    class="m-p-g__thumbs-img" alt="Balhauer's Kids Orchestra" />
+                <img src="img/design/thumbs/balhauer3.jpg" data-full="img/design/balhauer3.jpg"
+                    class="m-p-g__thumbs-img" alt="Balhauer's Kids Orchestra" />
+                <img src="img/design/thumbs/heart.jpg" data-full="img/design/heart.jpg" class="m-p-g__thumbs-img"
+                    alt="T-shirt" />
+                <img src="img/design/thumbs/print3.jpg" data-full="img/design/print3.jpg" class="m-p-g__thumbs-img"
+                    alt="Universidad Jos&eacute; Antonio P&aacute;ez" />
+                <img src="img/design/thumbs/print4.jpg" data-full="img/design/print4.jpg" class="m-p-g__thumbs-img"
+                    alt="Universidad Jos&eacute; Antonio P&aacute;ez" />
+                <img src="img/design/thumbs/print5.jpg" data-full="img/design/print5.jpg" class="m-p-g__thumbs-img"
+                    alt="Universidad Jos&eacute; Antonio P&aacute;ez" />
+                <img src="img/design/thumbs/maridian.jpg" data-full="img/design/maridian.jpg" class="m-p-g__thumbs-img"
+                    alt="Maridian" />
+                <img src="img/design/thumbs/web1.jpg" data-full="img/design/web1.jpg" class="m-p-g__thumbs-img"
+                    alt="Grey Archer" />
+                <img src="img/design/thumbs/web2.jpg" data-full="img/design/web2.jpg" class="m-p-g__thumbs-img"
+                    alt="Vanille" />
+                <img src="img/design/thumbs/web3.jpg" data-full="img/design/web3.jpg" class="m-p-g__thumbs-img"
+                    alt="PageUp" />
+                <img src="img/design/thumbs/cd1.jpg" data-full="img/design/cd1.jpg" class="m-p-g__thumbs-img"
+                    alt="Rolando Pe&ntilde;a" />
+                <img src="img/design/thumbs/bands1.jpg" data-full="img/design/bands1.jpg" class="m-p-g__thumbs-img"
+                    alt="Cigar bands" />
+                <img src="img/design/thumbs/banner2.jpg" data-full="img/design/banner2.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters Expo Banner" />
+                <img src="img/design/thumbs/catalog2.jpg" data-full="img/design/catalog2.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters Product Catalog" />
+                <img src="img/design/thumbs/catalog1.jpg" data-full="img/design/catalog1.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters Product Catalog" />
+                <img src="img/design/thumbs/postcard1.jpg" data-full="img/design/postcard1.jpg"
+                    class="m-p-g__thumbs-img" alt="Cuban Crafters" />
+                <img src="img/design/thumbs/postcard2.jpg" data-full="img/design/postcard2.jpg"
+                    class="m-p-g__thumbs-img" alt="Cuban Crafters" />
+                <img src="img/design/thumbs/postcard3.jpg" data-full="img/design/postcard3.jpg"
+                    class="m-p-g__thumbs-img" alt="Cuban Crafters" />
+                <img src="img/design/thumbs/postcard4.jpg" data-full="img/design/postcard4.jpg"
+                    class="m-p-g__thumbs-img" alt="Cuban Crafters" />
+                <img src="img/design/thumbs/postcard5.jpg" data-full="img/design/postcard5.jpg"
+                    class="m-p-g__thumbs-img" alt="Cuban Crafters" />
+                <img src="img/design/thumbs/print1.jpg" data-full="img/design/print1.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters" />
+                <img src="img/design/thumbs/print2.jpg" data-full="img/design/print2.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters" />
+                <img src="img/design/thumbs/print6.jpg" data-full="img/design/print6.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters" />
+                <img src="img/design/thumbs/print7.jpg" data-full="img/design/print7.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters" />
+                <img src="img/design/thumbs/product1.jpg" data-full="img/design/product1.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters RBH Cigar Cutter" />
+                <img src="img/design/thumbs/product2.jpg" data-full="img/design/product2.jpg" class="m-p-g__thumbs-img"
+                    alt="Cuban Crafters V Cigar Cutter" />
+            </div>
+            <div class="m-p-g__fullscreen"></div>
+        </div>
+    </section>
+
+
+    <!----------------------------------------------------------------------------------------------------------------- RETOUCH -->
+    <section id="retouch">
+        <h1 class="white">BEFORE AND AFTER</h1>
+        <div class="content black">
+
+            <div class='retouch-container r1'>
+                <div class='img background-img'></div>
+                <div class='img foreground-img'></div>
+                <input type="range" min="1" max="100" value="50" class="slider" name='slider'>
+                <div class='slider-button'></div>
+            </div>
+
+            <div class='retouch-container r2'>
+                <div class='img background-img'></div>
+                <div class='img foreground-img'></div>
+                <input type="range" min="1" max="100" value="50" class="slider" name='slider'>
+                <div class='slider-button'></div>
+            </div>
+
+            <div class='retouch-container r3'>
+                <div class='img background-img'></div>
+                <div class='img foreground-img'></div>
+                <input type="range" min="1" max="100" value="50" class="slider" name='slider'>
+                <div class='slider-button'></div>
+            </div>
+
+            <div class='retouch-container r4'>
+                <div class='img background-img'></div>
+                <div class='img foreground-img'></div>
+                <input type="range" min="1" max="100" value="50" class="slider" name='slider'>
+                <div class='slider-button'></div>
+            </div>
+
+            <div class='retouch-container r5'>
+                <div class='img background-img'></div>
+                <div class='img foreground-img'></div>
+                <input type="range" min="1" max="100" value="50" class="slider" name='slider'>
+                <div class='slider-button'></div>
+            </div>
+
+            <div class='retouch-container r6'>
+                <div class='img background-img'></div>
+                <div class='img foreground-img'></div>
+                <input type="range" min="1" max="100" value="50" class="slider" name='slider'>
+                <div class='slider-button'></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----------------------------------------------------------------------------------------------------------------- CONTACT -->
+    <footer id="contact">
+        <div id="contact-image">
+            <img src="img/me.jpg" alt="Jose Antonio De Cordova" title="Jose Antonio De Cordova">
+        </div>
+        <div id="contact-info">
+            <h2>Jose Antonio De Cordova</h2>
+            <p>Front End Developer &amp; Graphic Designer</p>
+            <a href="mailto:jadcoding@gmail.com">jadcoding@gmail.com</a>
+        </div>
+        </div>
+    </footer>
+
+
+    <!----------------------------------------------------------------------------------------------------------------- JAVASCRIPT -->
+    <script src="js/material-photo-gallery.js"></script>
     <script src="js/js.js"></script>
+
 </body>
+
 </html>
