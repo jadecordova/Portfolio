@@ -184,7 +184,7 @@ nav {
 #logo {
     position: relative;
     margin: 0 auto;
-    width: 30%;
+    width: 50%;
     min-width: 120px;
     top: 15vh;
     text-align: center;
@@ -694,6 +694,13 @@ This class makes the topnav look good on small screens
     .switcher {
         display: block;
     }
+    #logo{
+        width: 80%;
+    }
+    #logo img {
+        width: 50%;
+    }
+    
     /*------------------------------------------------------ about */
     #about {
         background: url(../img/about-300.png);
