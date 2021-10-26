@@ -1,0 +1,421 @@
+<!doctype html>
+
+<html>
+
+<head>
+    
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" >
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Pathway+Gothic+One|Patua+One|Slabo+27px|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+    <title>Welcome to Maridian Group</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/apply.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+
+	<script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+    <script src="js/jquery.scrollorama.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.scrolldeck.js"></script>
+	<script src="js/validation/dist/jquery.validate.js"></script>
+</head>
+
+<body>
+
+<!--HEADER START-->
+    
+<div id="start">
+    <div id="home">
+        <figure class="logo-left"><img src="images/logomaridian.png" alt="Maridian Group" /></figure>
+        <div id="call" class="subtitles centered" style="color: #77b55a">Call Now! 800.699.0196</div>
+			<nav>
+                <a class="myButton2" href="index.html#start">Home</a>
+                <a class="myButton2" id="funding" onclick="goto(1);">Business Funding</a>
+                <a class="myButton2" id="merchant" onclick="goto(2);">Merchant Processing</a>
+                <a class="myButton2" id="about" onclick="goto(3);">About Us</a>
+                <a class="myButton" href="#contact">Contact Us</a>
+            </nav>
+    </div>
+</div>
+
+<!--HEADER END-->
+        
+<div id="menu-space"></div>
+
+<div id="form-wrapper">
+	<div id="title" class="green">
+		Apply Now!
+	</div>
+	<div id="steps">
+		<a class="main-buttons" href="javascript:;" rel="form1" id="step1"><span class="big-numbers">1</span> Tell us your story.</a>
+		<a class="main-buttons" href="javascript:;" rel="form2" id="step2"><span class="big-numbers">2</span> Provide some details.</a>
+		<a class="main-buttons" href="javascript:;" rel="form3" id="step3"><span class="big-numbers">3</span> How to contact you.</a>
+	</div>
+	<div id="forms">
+		<form id="apply" method="post" action="process_application.php" onsubmit="return validate();">
+			<div id="form1" class="tab-content">
+				<div class="form-left">
+					<div>
+						<label>I'm seeking a loan alternative because I need (to): <span class="red">*</span></label>
+						<select  name="loan_alternative" id="loan_alternative" tabindex="1"> 
+							<option value="0" selected="selected">--Select--</option>
+							<option value="Business Working Capital">Business Working Capital</option>
+							<option value="Purchase Equipment">Purchase Equipment</option>
+							<option value="Remodel">Remodel</option>
+							<option value="Develop a Product">Develop a Product</option>
+							<option value="Business Training">Business Training</option>
+							<option value="Participate in a Trade Show">Participate in a Trade Show</option>
+							<option value="Business Expansion">Business Expansion</option>
+							<option value="Open a New Location">Open a New Location</option>
+							<option value="Buy a Business Partner's Interest">Buy a Business Partner's Interest</option>
+							<option value="Pay Business Taxes">Pay Business Taxes</option>
+							<option value="Make Payroll">Make Payroll</option>
+							<option value="Buy Inventory">Buy Inventory</option>
+							<option value="Hire Temporary Staff">Hire Temporary Staff</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<div>
+						<label>Ideally, I'd like access to: <span class="red">*</span></label>
+                        <select id="access_to" name="access_to" tabindex="1"> 
+							<option value="0" selected="selected">--Select--</option>
+							<option value="$5,000 - $300,000">$5,000 - $300,000</option>
+							<option value="$300,001 - $600,000">$300,001 - $600,000</option>
+							<option value="$600,001 - $900,000">$600,001 - $900,000</option>
+							<option value="$900,001 - $1.2 Million">$900,001 - $1.2 Million</option>
+							<option value="$1.2 Million - $1.5 Million">$1.2 Million - $1.5 Million</option>
+							<option value="$1.5 Million - $1.8 Million">$1.5 Million - $1.8 Million</option>
+							<option value="$1.8 Million - $2.1 Million">$1.8 Million - $2.1 Million</option>
+							<option value="$2.1 Million - $2.4 Million">$2.1 Million - $2.4 Million</option>
+							<option value="$2.4 Million - $2.7 Million">$2.4 Million - $2.7 Million</option>
+							<option value="$2.7 Million - $3 Million">$2.7 Million - $3 Million</option>
+						</select>
+						<p class="italics">Let us know what an ideal amount of capital is for you and your business</p>
+					</div>
+					<div>
+                        <label>My business type is: </label>
+                        <select id="business_type" name="business_type" tabindex="6"> 
+							<option value="0" selected="selected">--Select--</option>
+							<option value="Accounting (CPA)">Accounting (CPA)</option>
+							<option value="Agricultural">Agricultural</option>
+							<option value="Apparel">Apparel</option>
+							<option value="Architect">Architect</option>
+							<option value="Attorney">Attorney</option>
+							<option value="Automotive Parts">Automotive Parts</option>
+							<option value="Beverage">Beverage</option>
+							<option value="Bio-Tech">Bio-Tech</option>
+							<option value="Chiropractor">Chiropractor</option>
+							<option value="Computer Hardware">Computer Hardware</option>
+							<option value="Computer Software">Computer Software</option>
+							<option value="Construction">Construction</option>
+							<option value="Consulting">Consulting</option>
+							<option value="Consumer Products">Consumer Products</option>
+							<option value="Couriers / Messengers">Couriers / Messengers</option>
+							<option value="Defense">Defense</option>
+							<option value="Dental Technology">Dental Technology</option>
+							<option value="Dentist">Dentist</option>
+							<option value="Distribution">Distribution</option>
+							<option value="Dry Cleaner">Dry Cleaner</option>
+							<option value="Education Related">Education Related</option>
+							<option value="Electronics">Electronics</option>
+							<option value="Energy">Energy</option>
+							<option value="Entertainment">Entertainment</option>
+							<option value="Federal Government">Federal Government</option>
+							<option value="Film / Play / Video">Film / Play / Video</option>
+							<option value="Financial Services">Financial Services</option>
+							<option value="Fitness">Fitness</option>
+							<option value="Food Services">Food Services</option>
+							<option value="Forestry / Fishing">Forestry / Fishing</option>
+							<option value="Funeral Homes">Funeral Homes</option>
+							<option value="Gaming">Gaming</option>
+							<option value="Garmet">Garmet</option>
+							<option value="Gasoline Station">Gasoline Station</option>
+							<option value="Healthcare">Healthcare</option>
+							<option value="Import / Export">Import / Export</option>
+							<option value="Industrial Products">Industrial Products</option>
+							<option value="Insurance">Insurance</option>
+							<option value="Internet / Online Services">Internet / Online Services</option>
+							<option value="Laundromat">Laundromat</option>
+							<option value="Legal Profession">Legal Profession</option>
+							<option value="Lodging">Lodging</option>
+							<option value="Manufacturing">Manufacturing</option>
+							<option value="Marine">Marine</option>
+							<option value="Medical">Medical</option>
+							<option value="Medical (Therapist)">Medical (Therapist)</option>
+							<option value="Medical Technology">Medical Technology</option>
+							<option value="Mobile Home Parts">Mobile Home Parts</option>
+							<option value="Mortician">Mortician</option>
+							<option value="Municiple">Municiple</option>
+							<option value="Natural Resources">Natural Resources</option>
+							<option value="New Technology">New Technology</option>
+							<option value="Optometry">Optometry</option>
+							<option value="Pharmacist">Pharmacist</option>
+							<option value="Pharmaceuticals">Pharmaceuticals</option>
+							<option value="Printing">Printing</option>
+							<option value="Psychologist">Psychologist</option>
+							<option value="Publishing">Publishing</option>
+							<option value="Real Estate Related">Real Estate Related</option>
+							<option value="Resorts">Resorts</option>
+							<option value="Restaurants">Restaurants</option>
+							<option value="Retail">Retail</option>
+							<option value="Security">Security</option>
+							<option value="Semi-Conductors">Semi-Conductors</option>
+							<option value="Service Related">Service Related</option>
+							<option value="Space Technology">Space Technology</option>
+							<option value="Staffing">Staffing</option>
+							<option value="Telecommunications">Telecommunications</option>
+							<option value="Textiles">Textiles</option>
+							<option value="Titled Vehicles">Titled Vehicles</option>
+							<option value="Transportation">Transportation</option>
+							<option value="Trucking">Trucking</option>
+							<option value="Veterinary Technologies">Veterinary Technologies</option>
+							<option value="Veterinarian">Veterinarian</option>
+							<option value="Warehousing Storage">Warehousing Storage</option>
+							<option value="Waste Recycling">Waste Recycling</option>
+							<option value="Wholesale">Wholesale</option>
+							<option value="Other">Other</option>
+						</select>
+                    </div>
+					<div>
+                        <label>Anything else you'd like to share?: </label>
+                       <textarea name="Anything_else"></textarea>
+                    </div>
+				</div>
+				<div class="form-right">
+					<div>
+						<label style="margin-bottom:15px;">I've been in business for: <span class="red">*</span></label>
+						<div class="checkbox_apply">
+							<p><input name="business_for" id="business_for" type="radio" value="0-6 Months">0-6 Months<br/>
+							<input name="business_for" id="business_for" type="radio" value="6 Months to 2 Years">6 Months to 2 Years<br/>
+							<input name="business_for" id="business_for" type="radio" value="More than 2 years">More than 2 years</p>
+						</div>
+                    </div>
+					<p class="italics" style="margin-top:0px;">In most cases you will need to have been in business for more than 6 months, but we will try and help no matter what.</p>
+				</div>
+				<div id="error_div"></div>
+				<div id="form-button1">
+					<button class="button-base button-right" id="form-1-button-next" type="button" onclick="$('#steps > a:eq(1)').click();">Next</button>
+				</div>
+			</div>
+			<div id="form2" class="tab-content">
+				<div class="form-left">
+					<div>
+                        <label>Our total sales over the last 12 month were... <span class="red">*</span></label>
+                        <select id="total_sales" name="total_sales" tabindex="1"> 
+							<option value="0" selected="selected">--Select--</option>
+							<option value="less than $500,000">less than $500,000</option>
+							<option value="$500,000 - $1 Million">$500,000 - $1 Million</option>
+							<option value="$1 Million - $2.5 Million">$1 Million - $2.5 Million</option>
+							<option value="$2.5 Million - $5 Million">$2.5 Million - $5 Million</option>
+							<option value="$5 Million - $10 Million">$5 Million - $10 Million</option>
+							<option value="$10 Million - $20 Million">$10 Million - $20 Million</option>
+							<option value="$20 Million - $30 Million">$20 Million - $30 Million</option>
+							<option value="$30 Million  - $40 Million">$30 Million  - $40 Million</option>
+							<option value="$40 Million - $50 Million">$40 Million - $50 Million</option>
+							<option value="$50 Million - $100 Million">$50 Million - $100 Million</option>
+							<option value="over $100 Million">over $100 Million</option>
+						</select>
+					</div>
+					<div>
+						<label>How did you hear about us? <span class="red">*</span></label>
+						<select id="hear_about_us" name="hear_about_us" tabindex="5"> 
+							<option value="0" selected="selected">--select--</option>
+							<option value="Twitter">Twitter</option>
+							<option value="LinkedIn">LinkedIn</option>
+							<option value="Phone Call">Phone Call</option>
+							<option value="Blog">Blog</option>
+							<option value="The Green Sheet">The Green Sheet</option>
+							<option value="ISO &amp; Agent Magazine">ISO &amp; Agent Magazine</option>
+							<option value="Other Print Advertisement">Other Print Advertisement</option>
+							<option value="Email from RetailCapital">Email from RetailCapital</option>
+							<option value="Web Ad">Web Ad</option>
+							<option value="News Article">News Article</option>
+							<option value="Web Search">Web Search</option>
+							<option value="Letter">Letter</option>
+							<option value="Trade Show">Trade Show</option>	
+							<option value="Other">Other</option>
+						</select>
+                    </div>
+				</div>
+				<div class="form-right">
+					<div>
+						<label  style="margin-bottom:15px;">My current monthly visa matercard sales are:</label>
+						<div class="checkbox_apply">
+							<p><input name="visa_matercard_sales" type="radio" value="0 - $5,000">0 - $5,000<br/>
+							<input name="visa_matercard_sales" type="radio" value="$5,000 - $15,000">$5,000 - $15,000<br/>
+							<input name="visa_matercard_sales" type="radio" value="$15,000+ ">$15,000+</p>
+						</div>
+                    </div>
+				</div>
+				<div id="error_div2"></div>
+				<div id="button-wrapper">
+					<div id="form-button-previous">
+						<button class="button-base button-left" id="form-2-button-previous" type="button" onclick="$('#steps > a:eq(0)').click();">Previous</button>
+					</div>
+					<div id="form-button2">
+						<button class="button-base button-right" id="form-2-button-next" type="button" onclick="$('#steps > a:eq(2)').click();">Next</button>
+					</div>			
+				</div>
+			</div>
+			<div id="form3" class="tab-content">
+				<div class="form-left">
+					<div>
+						<label>First name<span class="red">*</span></label>
+						<input name="fname" id="fname" type="text">
+                    </div>
+                    <div>
+						<label>Phone<span class="red">*</span></label>
+						<input name="phone" id="phone" type="text">
+                    </div>
+                    <div>
+						<label>Company name<span class="red">*</span></label>
+						<input name="cname" id="cname" type="text">
+                    </div>
+                    <div>
+						<label>City <span class="red">*</span></label>
+						<input name="city" id="city" type="text">
+                    </div>
+                    <p class="sign_up_tex">I would like to recevied news and updates from Maridian Group.</p>
+                    <div><input name="news_update" type="checkbox" value="1">Yes, sign me up.</div>
+                </div>
+				<div class="form-right">
+					<div>
+						<label>Last name <span class="red">*</span></label>
+						<input name="lname" id="lname" type="text">
+					</div>
+					<div>
+						<label>Email<span class="red">*</span></label>
+						<input name="email" id="email" type="text">
+					 </div>
+					<div>
+						<label>Address<span class="red">*</span></label>
+						<input name="address" id="address" type="text">
+					</div>
+					<div>
+						<label>State<span class="red">*</span></label>
+						<select id="state" name="state" class="field select medium" onclick="handleInput(this);" onkeyup="handleInput(this);" tabindex="8"> 
+							<option value="0" selected="selected">--Select--</option>
+							<option value="Alabama">Alabama</option>
+							<option value="Alaska">Alaska</option>
+							<option value="Arizona">Arizona</option>
+							<option value="Arkansas">Arkansas</option>
+							<option value="California">California</option>
+							<option value="Colorado">Colorado</option>
+							<option value="Connecticut">Connecticut</option>
+							<option value="Delaware">Delaware</option>
+							<option value="Florida">Florida</option>
+							<option value="Georgia">Georgia</option>
+							<option value="Hawaii">Hawaii</option>
+							<option value="Idaho">Idaho</option>
+							<option value="Illinois">Illinois</option>
+							<option value="Indiana">Indiana</option>
+							<option value="Iowa">Iowa</option>
+							<option value="Kansas">Kansas</option>
+							<option value="Kentucky">Kentucky</option>
+							<option value="Louisiana">Louisiana</option>
+							<option value="Maine">Maine</option>
+							<option value="Maryland">Maryland</option>
+							<option value="Massachusetts">Massachusetts</option>
+							<option value="Michigan">Michigan</option>
+							<option value="Minnesota">Minnesota</option>
+							<option value="Mississippi">Mississippi</option>
+							<option value="Missouri">Missouri</option>
+							<option value="Montana">Montana</option>
+							<option value="Nebraska">Nebraska</option>
+							<option value="Nevada">Nevada</option>
+							<option value="New Hampshire">New Hampshire</option>
+							<option value="New Jersey">New Jersey</option>
+							<option value="New Mexico">New Mexico</option>
+							<option value="New York">New York</option>
+							<option value="North Carolina">North Carolina</option>
+							<option value="North Dakota">North Dakota</option>
+							<option value="Ohio">Ohio</option>
+							<option value="Oklahoma">Oklahoma</option>
+							<option value="Oregon">Oregon</option>
+							<option value="Pennsylvania">Pennsylvania</option>
+							<option value="Rhode Island">Rhode Island</option>
+							<option value="South Carolina">South Carolina</option>
+							<option value="South Dakota">South Dakota</option>
+							<option value="Tennessee">Tennessee</option>
+							<option value="Texas">Texas</option>
+							<option value="Utah">Utah</option>
+							<option value="Vermont">Vermont</option>
+							<option value="Virginia">Virginia</option>
+							<option value="Washington">Washington</option>
+							<option value="West Virginia">West Virginia</option>
+							<option value="Wisconsin">Wisconsin</option>
+							<option value="Wyoming">Wyoming</option>
+						</select>
+					</div>
+					<div>
+						<label>Zip <span class="red">*</span></label>
+						<input name="zip" id="zip" type="text">
+					</div>
+				</div>
+				<div id="error_div3"></div>
+				<div id="form-button3">
+					<button class="button-base button-left" id="form-3-button-previous" type="button" onclick="$('#steps > a:eq(1)').click();">Previous</button>
+				</div>
+				<div id="form-button4">
+					<input class="button-base button-right" id="form-3-button-submit" type="submit" value="submit">
+				</div>			
+			</div>
+		</form>
+	</div>	
+</div>
+
+
+<div class="content" id="contact">
+	<div class="contact-content c-align-right">
+		<span class="t4">Contact Us 24/7</span><br /><span class="t4"><span class="green">800.699.0196</span></span>
+		<address><p>220 71st Street #214 Miami Beach 33141</p></address>
+	</div>
+    <div class="contact-content c-align-left">
+    	<span class="t4">Want to get in touch with us?</span><br /><span class="t5">No problem, fill out the form below and we will get back to you. </span><br>
+        <div class="formLayout">
+        	<form name="contactus"  id="contactus"  method="post" action="" enctype="multipart/form-data">
+            	<label>Name:*</label>
+        		<input type="text" id="name" name="name" required /><br />
+		        <label>Email:*</label>
+		        <input type="email" id="email" name="email" required /><br />
+		        <label>Subject:</label>
+		        <input type="text" id="subject" name="subject" /><br />
+		        <label>Your Message:</label>
+		        <textarea rows="4" cols="31" id="message" name="message"></textarea><br />
+		        <label></label>
+                <input type="submit" value="Submit" id="submit" name="Submit" class="submit_go" /><br />
+			</form>
+			<div id="feedback" class="centered">Your message has been sent.</div> 
+        </div>
+    </div>
+</div>
+
+<div class="content" id="author">
+	Designed and developed by: <a href="mailto:decordovaja@gmail.com">Jose De Cordova</a>
+</div>
+
+
+<script src="js/validate.js"></script> 
+<script src="js/navigation.js"></script> 
+<script src="js/contactandscroll.js"></script> 
+
+<script>
+	$(document).ready(function(){
+		$("#step1").addClass("mainsteps");
+	})
+	
+	function goto(where){
+            var url = "index.html?s="+where;
+            window.location.href = url;
+	}
+    
+</script>
+
+</body>
+
+</html>
+

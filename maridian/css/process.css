@@ -1,0 +1,47 @@
+table{
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	width:100%;
+}
+
+tr:nth-child(even){
+	background: #eeeeee;	
+}
+
+td{
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(200,200,200);
+	padding: 10px;
+}
+
+#wrapper{
+	margin-top:150px;
+	position:relative;
+}
+
+#data{
+	width:95%;
+	max-width:700px;
+	margin: 20px auto;	
+}
+
+.values{
+	color:#888888;
+	font-weight:bold;
+}
+
+.header{
+	background:#77b55a;
+	color:white;
+}
+
+.time{
+	background:#444444;
+	color:white;
+	font-size:11px;
+}
+
+img{
+	display:inline-block;
+}

@@ -1,0 +1,571 @@
+7/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Slabo 27px', serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/* --------------------------------------------------------------------------------------------------------------------------*/
+/* RESOLUTION INDEPENDENT 
+/* --------------------------------------------------------------------------------------------------------------------------*/
+
+
+.inline{
+	display:inline-block;
+}
+
+#forms label{
+	display:block;
+}
+
+.tab-content{
+    display:none; 
+}
+
+.tab-content.open{
+    display:block;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #cccccc;
+}
+
+.italics{
+	font-size:12px;
+	font-style:italic;
+	margin-top:-15px;
+}
+
+#form-wrapper{
+	position:relative;
+}
+
+.main-buttons {
+	-moz-box-shadow: 0px 5px 15px -5px #aaaaaa;
+	-webkit-box-shadow: 0px 5px 15px -5px #aaaaaa;
+	box-shadow: 0px 5px 15px -5px #aaaaaa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #dddddd));
+	background:-moz-linear-gradient(top, #ffffff 5%, #dddddd 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #dddddd 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #dddddd 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #dddddd 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #dddddd 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0);
+	color: rgb(100,100,100);
+	background-color:#ffffff;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #cccccc;
+	display:inline-block;
+	cursor:pointer;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+
+.main-buttons:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+	color:#ffffff;
+	background-color:#77b55a;
+}
+
+.main-buttons:active {
+	position:relative;
+	top:1px;
+}
+
+.big-numbers{
+	vertical-align:middle;
+	color: #ff0000;
+}
+
+
+.mainsteps{
+	-moz-box-shadow: 0px 5px 15px -5px #000000;
+	-webkit-box-shadow: 0px 5px 15px -5px #000000;
+	box-shadow: 0px 5px 15px -5px #000000;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffd800), color-stop(1, #ffa200));
+	background:-moz-linear-gradient(top, #ffd800 5%, #ffa200 100%);
+	background:-webkit-linear-gradient(top, #ffd800 5%, #ffa200 100%);
+	background:-o-linear-gradient(top, #ffd800 5%, #ffa200 100%);
+	background:-ms-linear-gradient(top, #ffd800 5%, #ffa200 100%);
+	background:linear-gradient(to bottom, #ffd800 5%, #ffa200 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd800', endColorstr='#ffa200',GradientType=0);
+	background-color:#ffd800;
+	border:1px solid #cccccc;
+	color:#000000;
+}
+	
+.mainsteps:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+	color:#ffffff;
+	background-color:#77b55a;
+}
+
+
+#steps{
+	margin: auto;
+	text-align:center;
+}
+
+#forms{
+	font-family: 'Roboto Condensed', sans-serif;
+	color:#666666;
+	margin: 40px auto;
+	position:relative;
+	margin-bottom:10px;
+}
+
+#form1, #form2, #form3{
+	position:absolute;
+	box-sizing: border-box;
+	top:0px;
+	left:0px;
+}
+
+
+#error_div, #error_div2, #error_div3{
+	position:absolute;
+	box-sizing: border-box;
+	background:#ffdddd;
+	border:1px solid #ff0000;
+	z-index:10000;
+	color:#000000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+.button-base{
+	-moz-box-shadow: 0px 5px 15px -5px #3e7327;
+	-webkit-box-shadow: 0px 5px 15px -5px #3e7327;
+	box-shadow: 0px 5px 15px -5px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+
+.button-base:hover{
+	-moz-box-shadow: 0px 5px 15px -5px #cccccc;
+	-webkit-box-shadow: 0px 5px 15px -5px #cccccc;
+	box-shadow: 0px 5px 15px -5px #cccccc;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #dddddd));
+	background:-moz-linear-gradient(top, #ffffff 5%, #dddddd 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #dddddd 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #dddddd 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #dddddd 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #dddddd 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0);
+	background-color:#ffffff;
+	color:#777777;
+	border:1px solid #cccccc;
+}
+
+.button-right, .button-left{
+	position:relative;
+}
+
+#title{
+	margin: 0 auto;
+	font-family: 'Slabo 27px', serif;
+	text-align:center;
+	width:80%;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------*/
+/* 1150 ->     
+/* --------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (min-width: 1150px)  {
+
+#form-wrapper{
+	margin: 20px auto;
+	width: 900px;
+/*	height:620px; */
+}
+
+#steps{
+	padding:10px;
+}
+
+#forms{
+	width:900px;
+/*	height:580px; */
+}
+
+#form1, #form2, #form3{
+	width:900px;
+/*	height:460px; */
+	padding:10px;
+}
+
+#error_div, #error_div2, #error_div3{
+	width:450px;
+	height:30px;
+	top:-40px;
+	left: 0px;
+	padding:5px;
+	font-size:1em;
+}
+
+/*---------------------------------------------------------------- BUTTONS */
+
+.button-base{
+	font-size:20px;
+	padding:6px 12px;
+	width:150px;
+}
+
+.button-right{
+}
+
+.button-left{
+}
+
+.main-buttons {
+	font-size:20px;
+	padding:6px;
+	width:200px;
+	margin: 0 20px;
+}
+
+#title{
+	font-size:2em;
+}
+
+.form-left{
+	float:left;
+	width:50%;
+}
+
+.form-right{
+	float:right;
+	width:50%;
+}
+
+#forms input[type="text"], #forms select, #forms textarea{
+	width:350px;
+	margin-bottom:20px;
+}
+
+#forms textarea{
+	height:150px;
+}
+
+#forms input[type="radio"]{
+	width:10px;
+	margin-left:40px;
+}
+
+#forms input[type="checkbox"]{
+	width:10px;
+	margin-left:40px;
+}
+
+.big-numbers{
+	font-size:3em;
+	margin-right:5px;
+}
+
+#button-wrapper{
+	position:relative;
+	clear:both;
+}
+
+#form1 .form-left, #form1 .form-right{
+	height:400px;
+}
+
+#form2 .form-left, #form2 .form-right{
+	height:170px;
+}
+
+#form3 .form-left, #form3 .form-right{
+	height:340px;
+}
+
+#form-button1, #form-button2, #form-button-previous, #form-button3, #form-button4{
+	display:inline-block;
+	margin-right:10px;
+}
+
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------*/
+/* 641 - 1150      
+/* --------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (min-width: 641px) and (max-width: 1149px)  {
+
+#form-wrapper{
+	margin: 50px auto 0 auto;
+	width: 98%;
+	max-width:800px;
+/*	height:700px; */
+}
+
+#steps{
+	padding:10px;
+}
+
+#forms{
+	width: 100%;
+	max-width:800px;
+/*	height:680px; */
+}
+
+#form1, #form2, #form3{
+	width: 100%;
+	max-width:800px;
+/*	height:540px; */
+	padding:10px;
+}
+
+#error_div, #error_div2, #error_div3{
+	width:450px;
+	height:30px;
+	top:-40px;
+	left: 0px;
+	padding:5px;
+	font-size:1em;
+}
+
+/*---------------------------------------------------------------- BUTTONS */
+
+.button-base{
+	font-size:20px;
+	padding:6px 12px;
+	width:100px;
+}
+
+.button-right{
+}
+
+.button-left{
+}
+
+.main-buttons {
+	font-size:16px;
+	padding:6px;
+	width:120px;
+	margin: 0 20px;
+	height:60px;
+}
+
+#title{
+	font-size:2em;
+}
+
+.form-left{
+	width:48%;
+	float:left;
+}
+
+.form-right{
+	width:48%;
+	float:right;
+}
+
+
+#forms input[type="text"], #forms select, #forms textarea{
+	width:100%;
+	margin-bottom:20px;
+}
+
+#forms textarea{
+	height:150px;
+}
+
+#forms input[type="radio"]{
+		width:10px;
+		margin-left:40px;
+}
+
+#forms input[type="checkbox"]{
+		width:10px;
+		margin-left:40px;
+}
+
+.big-numbers{
+	display:block;
+	font-size:2em;
+	margin-right:5px;
+}
+
+#button-wrapper{
+	position:relative;
+	clear:both;
+}
+
+#form1 .form-left, #form1 .form-right{
+	height:400px;
+}
+
+#form2 .form-left, #form2 .form-right{
+	height:170px;
+}
+
+#form3 .form-left, #form3 .form-right{
+	height:340px;
+}
+
+#form-button1, #form-button2, #form-button-previous, #form-button3, #form-button4{
+	display:inline-block;
+	margin-right:10px;
+}
+
+
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------*/
+/* <641
+/* --------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media  (max-width: 640px)  {
+
+#form-wrapper{
+	margin: 50px auto 0 auto;
+	width: 98%;
+	max-width:638px;
+	display:block;
+/*	height:700px; */
+}
+
+#steps{
+	padding:5px;
+}
+
+#forms{
+	width: 100%;
+	max-width:630px;
+/*	height:680px; */
+}
+
+#form1, #form2, #form3{
+	width: 100%;
+	max-width:630px;
+/*	height:540px; */
+	padding:5px;
+	position:relative;
+}
+
+#error_div, #error_div2, #error_div3{
+	width:300px;
+	height:30px;
+	top:-40px;
+	left: 0px;
+	padding:5px;
+	font-size:.8em;
+}
+
+/*---------------------------------------------------------------- BUTTONS */
+
+.button-base{
+	font-size:20px;
+	padding:6px 12px;
+	width:80px;
+}
+
+.main-buttons {
+	font-size:14px;
+	padding:2px;
+	width:60px;
+	margin: 0 5px;
+	height:60px;
+}
+
+#title{
+	font-size:2em;
+}
+
+#forms input[type="text"], #forms select, #forms textarea{
+	width:100%;
+	margin-bottom:20px;
+}
+
+#forms textarea{
+	height:150px;
+}
+
+#forms input[type="radio"]{
+		width:10px;
+		margin-left:0px;
+}
+
+#forms input[type="checkbox"]{
+		width:10px;
+		margin-left:10px;
+}
+
+.big-numbers{
+	font-size:2em;
+	margin-right:5px;
+}
+
+#form-button1, #form-button2, #form-button-previous, #form-button3, #form-button4{
+	display:inline-block;
+	margin-right:10px;
+}
+
+#button-wrapper{
+	position:relative;
+	clear:both;
+}
+
+.form-left{
+	width:48%;
+	float:left;
+}
+
+.form-right{
+	width:48%;
+	float:right;
+}
+
+#form1 .form-left, #form1 .form-right{
+	height:480px;
+}
+
+#form2 .form-left, #form2 .form-right{
+	height:170px;
+}
+
+#form3 .form-left, #form3 .form-right{
+	height:370px;
+}
+
+}
+	  

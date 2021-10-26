@@ -1,0 +1,69 @@
+/*@media screen and (max-width: 1280px) {
+nav li { padding:0 30px;}
+.header { width:75%;}
+.textContent2 { width:39.2%;}
+.contactright input[type="button"] {margin-left: 246px;}
+.imageCLeft img { float:none;}
+}
+
+@media screen and (max-width: 1080px) {
+nav li { padding:0 19px;}
+}
+
+@media screen and (max-width: 1024px) {
+nav li { padding:0 10px;}
+
+}
+
+
+@media screen and (max-width: 980px) {
+nav li { padding:0 10px;}
+
+}
+
+@media screen and (max-width: 768px) {
+	
+
+}
+
+@media screen and (max-width: 640px){
+nav li { padding:0 10px;}
+.slide { width:80.3%; padding:60px 0 0 0;}
+.nav-button {text-decoration: none;	color: #838484;	font-size: 13px;}
+.contactLeft { width:100%;}
+.contactright { width:100%; padding:20px 0 0;}
+.contactright input[type="text"] { width:78%;}
+.contactright textarea { width:78%;}
+.contactright span { text-indent:14px;}
+.margin_left { margin-left:10px;}
+}
+
+@media screen and (max-width: 590px){
+	
+	.logo { float:none; margin:0 auto; display:table;}
+	nav { padding:0 0 20px; float:left!important;}
+	nav li { padding:0 19px;}
+}
+
+
+@media screen and (max-width: 480px){
+nav li { padding:0 13px;}
+
+}
+
+
+@media screen and (max-width: 410px){
+
+
+}
+
+@media screen and (max-width: 360px){
+	
+}
+
+@media screen and (max-width: 320px){
+
+
+
+}
+*/
